@@ -8,6 +8,6 @@ When the docker image is run, the container clones this repository and runs the 
 
 ## EC2 instance details
 
-Amazon EC2 instance running at ip address : [Localhost IP](54.152.52.210)
+Amazon EC2 instance running at ip address : 54.152.52.210
 
 To access Flask program running on localhost, just add port number 5000, i.e. on the address : 54.152.52.210:5000
