@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.5-slim
 
 MAINTAINER Harshil Darji "harshildarji2001@gmail.com"
 
@@ -6,12 +6,18 @@ RUN apt-get update
 RUN apt-get install git -y
 RUN pip3 install Flask
 
-COPY . /flask
-WORKDIR /flask
+USER root
 
-ENTRYPOINT ["python"]
+#RUN mkdir -p /app
+#ADD . /app
 
-#EXPOSE  5000
-#CMD ["python", "/home/ec2-user/DockerFiles/hello.py", "-p 5000"]
+RUN git clone https://github.com/harshil-darji/flask-AWS
+
+WORKDIR /flask-AWS
+
+ENTRYPOINT ["python3"]
+
+EXPOSE 5000
+ENV NAME World
 
 CMD ["hello.py"]
