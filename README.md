@@ -8,6 +8,6 @@ When the docker image is run, the container clones this repository and runs the 
 
 ## EC2 instance details
 
-Amazon EC2 instance running at ip address : http://54.161.86.179/
+Amazon EC2 instance is running right now.
 
 To access Flask program running on visit the ip address : http://54.161.86.179:5000/
